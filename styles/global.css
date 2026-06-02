@@ -1,0 +1,90 @@
+/* poppins-200 - latin */
+@font-face {
+	font-display: swap;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 200;
+	src: url("../fonts/poppins-v24-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+	font-display: swap;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+	font-display: swap;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+	--primary-text: #4d4f62;
+	--secondary-text: #6a7178;
+	--page-bg: #fafafa;
+	--card-bg: #ffffff;
+	--card-color: #ffffff;
+	--border-width-1: #ea5454;
+	--border-width-2: #44d3d2;
+	--border-width-3: #549ef2;
+	--border-width-4: #fcae4a;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	background-color: var(--page-bg);
+	margin: 4.125rem 1.875rem 2.875rem 1.875rem;
+}
+
+.text-presets-1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 2.25rem;
+	line-height: 140%;
+	letter-spacing: 0.015625rem;
+}
+
+.text-presets-2 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-size: 2.25rem;
+	line-height: 140%;
+	letter-spacing: 0.015625rem;
+}
+
+.text-presets-3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 135%;
+}
+
+.text-presets-4 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 0.9375rem;
+	line-height: 140%;
+}
+
+.text-presets-5 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 0.8125rem;
+	line-height: 160%;
+}
