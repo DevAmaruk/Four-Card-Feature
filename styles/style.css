@@ -1,0 +1,171 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 3.125rem;
+	width: 316px;
+
+	@media (width >= 40rem) {
+		width: 540px;
+	}
+}
+
+.title h1,
+.title h2,
+.title h3 {
+	margin: 0;
+	color: var(--primary-text);
+}
+
+.title h3 {
+	padding-top: 1rem;
+}
+
+.title .text-presets-2,
+.title .text-presets-1 {
+	font-size: 1.5rem;
+
+	@media (width >= 40rem) {
+		font-size: 2.25rem;
+	}
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+
+	@media (width >= 40rem) {
+		width: 660px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (width >= 75rem) {
+		width: 1114px;
+		grid-template-columns: repeat(3, min-content);
+		grid-template-rows: repeat(2, min-content);
+	}
+}
+
+.card {
+	background-color: var(--card-bg);
+	padding: 2rem;
+	width: 314px;
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 4px 0 0 0;
+	border-color: var(--card-color);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 2rem;
+
+	@media (width >= 75rem) {
+		width: 350px;
+	}
+}
+
+.card p {
+	margin: 0;
+	padding: 6px;
+}
+
+.card p:first-child {
+	color: var(--primary-text);
+}
+
+.card p:nth-child(2) {
+	color: var(--secondary-text);
+}
+
+.card img {
+	margin: 0;
+	width: 4rem;
+	height: 4rem;
+}
+
+.card--lightblue {
+	--card-color: var(--border-width-2);
+
+	@media (width >= 40rem) {
+		grid-column: 1;
+		grid-row: 2;
+		justify-self: start;
+	}
+
+	@media (width >= 75rem) {
+		grid-column: 1;
+		grid-row: span 2;
+		justify-self: center;
+	}
+}
+
+.card--red {
+	--card-color: var(--border-width-1);
+
+	@media (width >= 40rem) {
+		grid-column: span 2;
+		grid-row: 1;
+		justify-self: center;
+	}
+
+	@media (width >= 75rem) {
+		grid-column: 2;
+	}
+}
+
+.card--yellow {
+	--card-color: var(--border-width-4);
+
+	@media (width >= 40rem) {
+		grid-column: 2;
+		grid-row: 2;
+		justify-self: end;
+	}
+
+	@media (width >= 75rem) {
+		grid-column: 2;
+		justify-self: center;
+	}
+}
+
+.card--blue {
+	--card-color: var(--border-width-3);
+
+	@media (width >= 40rem) {
+		grid-column: span 2;
+		grid-row: 3;
+		justify-self: center;
+	}
+
+	@media (width >= 75rem) {
+		grid-column: 3;
+		grid-row: span 2;
+	}
+}
+
+.attribution {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: var(--primary-text);
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.challenge:link {
+	color: var(--border-width-1);
+}
+
+.challenge:visited {
+	color: var(--border-width-1);
+}
