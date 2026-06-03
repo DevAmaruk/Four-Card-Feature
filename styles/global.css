@@ -50,10 +50,10 @@ html {
 body {
 	background-color: var(--page-bg);
 	margin: 4.125rem 1.875rem 2.875rem 1.875rem;
+	font-family: "Poppins", sans-serif;
 }
 
 .text-presets-1 {
-	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	font-size: 2.25rem;
 	line-height: 140%;
@@ -61,7 +61,6 @@ body {
 }
 
 .text-presets-2 {
-	font-family: "Poppins", sans-serif;
 	font-weight: 200;
 	font-size: 2.25rem;
 	line-height: 140%;
@@ -69,21 +68,18 @@ body {
 }
 
 .text-presets-3 {
-	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	font-size: 1.25rem;
 	line-height: 135%;
 }
 
 .text-presets-4 {
-	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-size: 0.9375rem;
 	line-height: 140%;
 }
 
 .text-presets-5 {
-	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-size: 0.8125rem;
 	line-height: 160%;
